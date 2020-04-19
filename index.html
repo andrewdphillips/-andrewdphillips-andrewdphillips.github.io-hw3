@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <title>Password Generator</title>
+<style>
+  /********************************** Header ************************/
+h1 {
+    text-align: center;
+}
+
+/********************************** Section/content **********************/
+section{
+    border: solid 1px #cccccc;
+    background: #ffffff;
+    padding: 5%;
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+    padding-bottom: 0%;
+
+}
+
+#password {
+    display: block;
+    margin: 0;
+    border: dashed 3px #7777777e;
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+button {
+    padding: 2% 8%;
+    background: rgb(245, 42, 42);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 130%;
+}
+
+@media screen and (max-width: 768px){
+    #generate{
+        margin-bottom: 2px;
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- heading -->
+    <div class="row">
+      <header class="col-md-12">
+        <h1>Password Generator</h1>
+      </header>
+    </div>
+    <!-- section -->
+    <section>
+      <!-- secondary heading -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Generate a Password</h2>
+        </div>
+      </div>
+      <hr>
+      <!-- textarea -->
+      <div class="row">
+        <div class="col-md-12">
+          <textarea readonly id="password" placeholder="Your Secure Password"
+            aria-label="Generated Password"></textarea>
+        </div>
+      </div>
+      <!-- buttons -->
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <button id="generate">Generate Password</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
